@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>通讯录</title>
+</head>
+<body>
+<h2>通讯录</h2>
+<table border="1">
+    <tr>
+        <th>姓名</th>
+        <th>地址</th>
+    </tr>
+    {% for user in address %}
+        <tr>
+            <td>{{ user.name }}</td>
+            <td>{{ user.address }}</td>
+        </tr>
+    {% endfor %}
+</table>
+<p><a href="/xls/address/">Excel格式下载</a></p>
+</body>
+</html>
+
+
